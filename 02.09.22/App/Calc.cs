@@ -10,9 +10,11 @@ namespace CalcProject.App
     {
         public void Run()
         {
+            Console.WriteLine("hellicopter");
             Console.WriteLine("Priv");
         }
     }
 }
 
 //Dorou
+//Yo
