@@ -10,7 +10,7 @@ namespace CalcProject.App
     {
         public void Run()
         {
-            Console.WriteLine("hello world");
+            Console.WriteLine("Priv");
         }
     }
 }
