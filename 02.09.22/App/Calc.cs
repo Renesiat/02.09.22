@@ -11,6 +11,7 @@ namespace CalcProject.App
         public void Run()
         {
             Console.WriteLine("copycat");
+            Console.WriteLine("copppp");
             Console.WriteLine("Priv");
         }
     }
