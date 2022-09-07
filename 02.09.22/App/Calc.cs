@@ -10,7 +10,7 @@ namespace CalcProject.App
     {
         public void Run()
         {
-            Console.WriteLine("cvadrocopter");
+            Console.WriteLine("copter");
             Console.WriteLine("Priv");
         }
     }
