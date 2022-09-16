@@ -10,7 +10,7 @@ namespace CalcProject.App
     {
         public void Run()
         {
-            Console.WriteLine("copycat");
+            Console.WriteLine("Conflict");
             Console.WriteLine("copppp");
             Console.WriteLine("Priv");
         }
