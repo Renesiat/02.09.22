@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
@@ -19,7 +20,7 @@ namespace CalcProject.App
                 int temp = Array.IndexOf(digits, str[i]);
                 int current_digits_index = temp;
 
-                if (current_digits_index == -1)
+                if (current_digits_index<=0)
                 {
                     throw new ArgumentException($"Invalid digit'{str[i]}'");
                 }
@@ -34,10 +35,12 @@ namespace CalcProject.App
                     value += digits_values[i];
 
                 }
+
             }
 
             return value;
             //roman
         }
+
     }
 }
