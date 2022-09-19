@@ -37,16 +37,16 @@ namespace TestCalc
             Assert.AreEqual(RomanNumber.Parse("LV"), 55);
             Assert.AreEqual(RomanNumber.Parse("XL"), 40);
         }
-        //[TestMethod]
-        //public void AddStaticTest()
-        //{
-        //    RomanNumber rn5 = RomanNumber.Add(2, 3);
-        //    RomanNumber rn8 = RomanNumber.Add(rn5, 3);
-        //    RomanNumber rn10 = RomanNumber.Add("I", "IX");
-        //    RomanNumber rn9 = RomanNumber.Add(rn5, "IV");
-        //    RomanNumber rn13 = RomanNumber.Add(rn5, rn8);
+        [TestMethod]
+        public void AddStaticTest()
+        {
+            RomanNumber rn5 = RomanNumber.Add(2, 3);
+            RomanNumber rn8 = RomanNumber.Add(rn5, 3);
+            RomanNumber rn10 = RomanNumber.Add("I", "IX");
+            RomanNumber rn9 = RomanNumber.Add(rn5, "IV");
+            RomanNumber rn13 = RomanNumber.Add(rn5, rn8);
 
-        //}
+        }
     }
 
 }
