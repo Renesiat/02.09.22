@@ -6,6 +6,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace CalcProject.App
 {
     public class RomanNumber
@@ -80,6 +81,14 @@ namespace CalcProject.App
 
             return new(a.Value + b.Value);
         }
-
+             private RomanNumber(object value)
+        {
+            if (value is null) throw new ArgumentNullException(nameof(value));
+            else if (value is RomanNumber rn) Num = rn.Num;
+            else if (value is int int_val) Num = int_val;
+            else if (value is double d_value) Num = Convert.ToInt32(d_value);
+            else if (value is string s_val) Num = Parse(s_val);
+            else throw new ArgumentException($"Invalid argument type {value.GetType().Name}");
+        }
     }
 }
